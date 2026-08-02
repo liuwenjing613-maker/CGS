@@ -1,0 +1,42 @@
+# Local environments and package caches
+envs/
+.conda/
+.cache/
+.config/
+models/
+
+# Datasets and generated mapping artifacts
+data/
+**/outputs/
+*.pkl
+*.pkl.gz
+*.rrd
+
+# Model weights and binary checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Python/build artifacts
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Credentials and local overrides
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Runtime links and editor files
+latest_pcd_save
+.DS_Store
+*.swp
+

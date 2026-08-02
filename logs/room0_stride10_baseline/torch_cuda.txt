@@ -1,0 +1,6 @@
+CUDA_VISIBLE_DEVICES= 0
+torch 2.0.1
+torch.version.cuda 11.8
+cuda.is_available True
+cuda.device_count 1
+device_name NVIDIA RTX 5880 Ada Generation

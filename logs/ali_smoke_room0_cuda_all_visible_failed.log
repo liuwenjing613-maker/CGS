@@ -1,0 +1,255 @@
+[2026-08-02 13:26:09,874][HYDRA] Hydra 1.3.4
+[2026-08-02 13:26:09,875][HYDRA] ===========
+[2026-08-02 13:26:09,875][HYDRA] Installed Hydra Plugins
+[2026-08-02 13:26:09,875][HYDRA] ***********************
+[2026-08-02 13:26:09,875][HYDRA] 	ConfigSource:
+[2026-08-02 13:26:09,875][HYDRA] 	-------------
+[2026-08-02 13:26:09,875][HYDRA] 		FileConfigSource
+[2026-08-02 13:26:09,875][HYDRA] 		ImportlibResourcesConfigSource
+[2026-08-02 13:26:09,875][HYDRA] 		StructuredConfigSource
+[2026-08-02 13:26:09,875][HYDRA] 	CompletionPlugin:
+[2026-08-02 13:26:09,875][HYDRA] 	-----------------
+[2026-08-02 13:26:09,875][HYDRA] 		BashCompletion
+[2026-08-02 13:26:09,875][HYDRA] 		FishCompletion
+[2026-08-02 13:26:09,875][HYDRA] 		ZshCompletion
+[2026-08-02 13:26:09,875][HYDRA] 	Launcher:
+[2026-08-02 13:26:09,875][HYDRA] 	---------
+[2026-08-02 13:26:09,875][HYDRA] 		BasicLauncher
+[2026-08-02 13:26:09,875][HYDRA] 	Sweeper:
+[2026-08-02 13:26:09,875][HYDRA] 	--------
+[2026-08-02 13:26:09,875][HYDRA] 		BasicSweeper
+[2026-08-02 13:26:09,875][HYDRA] 
+[2026-08-02 13:26:09,875][HYDRA] Config search path
+[2026-08-02 13:26:09,875][HYDRA] ******************
+[2026-08-02 13:26:09,944][HYDRA] | Provider | Search path                                                                                    |
+[2026-08-02 13:26:09,944][HYDRA] -------------------------------------------------------------------------------------------------------------
+[2026-08-02 13:26:09,944][HYDRA] | hydra    | pkg://hydra.conf                                                                               |
+[2026-08-02 13:26:09,944][HYDRA] | main     | file:///home/chenkejun/beauty/conceptgraphs/code/concept-graphs-ali/conceptgraph/hydra_configs |
+[2026-08-02 13:26:09,944][HYDRA] | schema   | structured://                                                                                  |
+[2026-08-02 13:26:09,944][HYDRA] -------------------------------------------------------------------------------------------------------------
+[2026-08-02 13:26:09,981][HYDRA] 
+[2026-08-02 13:26:09,981][HYDRA] Defaults Tree
+[2026-08-02 13:26:09,981][HYDRA] *************
+[2026-08-02 13:26:09,981][HYDRA] <root>:
+[2026-08-02 13:26:09,981][HYDRA]   hydra/config:
+[2026-08-02 13:26:09,981][HYDRA]     hydra/output: default
+[2026-08-02 13:26:09,981][HYDRA]     hydra/launcher: basic
+[2026-08-02 13:26:09,981][HYDRA]     hydra/sweeper: basic
+[2026-08-02 13:26:09,981][HYDRA]     hydra/help: default
+[2026-08-02 13:26:09,982][HYDRA]     hydra/hydra_help: default
+[2026-08-02 13:26:09,982][HYDRA]     hydra/hydra_logging: default
+[2026-08-02 13:26:09,982][HYDRA]     hydra/job_logging: custom_logging_format
+[2026-08-02 13:26:09,982][HYDRA]     hydra/callbacks: null
+[2026-08-02 13:26:09,982][HYDRA]     hydra/env: default
+[2026-08-02 13:26:09,982][HYDRA]     _self_
+[2026-08-02 13:26:09,982][HYDRA]   rerun_realtime_mapping:
+[2026-08-02 13:26:09,982][HYDRA]     base
+[2026-08-02 13:26:09,982][HYDRA]     base_mapping:
+[2026-08-02 13:26:09,982][HYDRA]       base_paths
+[2026-08-02 13:26:09,982][HYDRA]       _self_
+[2026-08-02 13:26:09,982][HYDRA]     replica:
+[2026-08-02 13:26:09,982][HYDRA]       base_paths
+[2026-08-02 13:26:09,982][HYDRA]       _self_
+[2026-08-02 13:26:09,982][HYDRA]     sam
+[2026-08-02 13:26:09,982][HYDRA]     classes:
+[2026-08-02 13:26:09,982][HYDRA]       base_paths
+[2026-08-02 13:26:09,982][HYDRA]       _self_
+[2026-08-02 13:26:09,982][HYDRA]     logging_level
+[2026-08-02 13:26:09,982][HYDRA]     _self_
+[2026-08-02 13:26:10,020][HYDRA] 
+[2026-08-02 13:26:10,020][HYDRA] Defaults List
+[2026-08-02 13:26:10,020][HYDRA] *************
+[2026-08-02 13:26:10,020][HYDRA] | Config path                             | Package             | _self_ | Parent                 | 
+[2026-08-02 13:26:10,020][HYDRA] ----------------------------------------------------------------------------------------------------
+[2026-08-02 13:26:10,020][HYDRA] | hydra/output/default                    | hydra               | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/launcher/basic                    | hydra.launcher      | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/sweeper/basic                     | hydra.sweeper       | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/help/default                      | hydra.help          | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/hydra_help/default                | hydra.hydra_help    | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/hydra_logging/default             | hydra.hydra_logging | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/job_logging/custom_logging_format | hydra.job_logging   | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/env/default                       | hydra.env           | False  | hydra/config           |
+[2026-08-02 13:26:10,020][HYDRA] | hydra/config                            | hydra               | True   | <root>                 |
+[2026-08-02 13:26:10,020][HYDRA] | base                                    |                     | False  | rerun_realtime_mapping |
+[2026-08-02 13:26:10,020][HYDRA] | base_paths                              |                     | False  | base_mapping           |
+[2026-08-02 13:26:10,020][HYDRA] | base_mapping                            |                     | True   | rerun_realtime_mapping |
+[2026-08-02 13:26:10,020][HYDRA] | base_paths                              |                     | False  | replica                |
+[2026-08-02 13:26:10,020][HYDRA] | replica                                 |                     | True   | rerun_realtime_mapping |
+[2026-08-02 13:26:10,020][HYDRA] | sam                                     |                     | False  | rerun_realtime_mapping |
+[2026-08-02 13:26:10,020][HYDRA] | base_paths                              |                     | False  | classes                |
+[2026-08-02 13:26:10,020][HYDRA] | classes                                 |                     | True   | rerun_realtime_mapping |
+[2026-08-02 13:26:10,020][HYDRA] | logging_level                           |                     | False  | rerun_realtime_mapping |
+[2026-08-02 13:26:10,020][HYDRA] | rerun_realtime_mapping                  |                     | True   | <root>                 |
+[2026-08-02 13:26:10,020][HYDRA] ----------------------------------------------------------------------------------------------------
+[2026-08-02 13:26:10,084][HYDRA] Config
+[2026-08-02 13:26:10,084][HYDRA] ******
+[2026-08-02 13:26:10,087][HYDRA] use_wandb: false
+use_rerun: false
+repo_root: /home/chenkejun/beauty/conceptgraphs/code/concept-graphs-ali
+data_root: /home/chenkejun/beauty/conceptgraphs/data
+dataset_root: ${data_root}/Replica
+dataset_config: ${repo_root}/conceptgraph/dataset/dataconfigs/replica/replica.yaml
+scene_id: room0
+start: 0
+end: 100
+stride: 20
+image_height: null
+image_width: null
+make_edges: false
+periodically_save_pcd: false
+periodically_save_pcd_interval: 10
+detections_exp_suffix: smoke_detections_stride20
+exit_early_file: ${repo_root}/conceptgraph/hydra_configs/early_exit.json
+device: cuda
+use_iou: true
+spatial_sim_type: overlap
+phys_bias: 0.0
+match_method: sim_sum
+semantic_threshold: 0.5
+physical_threshold: 0.5
+sim_threshold: 1.2
+use_contain_number: false
+contain_area_thresh: 0.95
+contain_mismatch_penalty: 0.5
+mask_area_threshold: 25
+mask_conf_threshold: 0.25
+max_bbox_area_ratio: 0.5
+min_points_threshold: 16
+obj_pcd_max_points: 5000
+downsample_voxel_size: 0.01
+dbscan_remove_noise: true
+dbscan_eps: 0.1
+dbscan_min_points: 10
+obj_min_points: 0
+obj_min_detections: 1
+merge_overlap_thresh: 0.7
+merge_visual_sim_thresh: 0.7
+merge_text_sim_thresh: 0.7
+denoise_interval: 5
+filter_interval: 5
+merge_interval: 5
+run_denoise_final_frame: true
+run_filter_final_frame: true
+run_merge_final_frame: true
+save_pcd: true
+save_json: true
+save_suffix: exp_streamlined_mapping_base_suffix
+vis_render: false
+debug_render: false
+class_agnostic: false
+save_objects_all_frames: false
+save_rerun: true
+latest_pcd_filepath: ${repo_root}/latest_pcd_save
+render_camera_path: ${repo_root}/conceptgraph/dataset/dataconfigs/replica/replica_room0.json
+sam_variant: sam
+sam_encoder_version: vit_h
+sam_checkpoint_path: /home/kuwajerw/repos/new_segment_anything/Grounded-Segment-Anything/sam_vit_h_4b8939.pth
+mobile_sam_path: /home/kuwajerw/repos/new_segment_anything/Grounded-Segment-Anything/mobile_sam.pt
+classes_file: ${repo_root}/conceptgraph/scannet200_classes.txt
+bg_classes:
+- wall
+- floor
+- ceiling
+skip_bg: false
+force_detection: true
+save_detections: true
+exp_suffix: smoke_mapping_stride20
+save_video: false
+
+[2026-08-02 13:26:10,109][INFO][m:optional_rerun_wrapper][fn:set_use_rerun][ln:28] - rerun functionality is disabled in the config. Not using rerun for logging.
+[2026-08-02 13:26:10,109][DEBUG][m:optional_rerun_wrapper][fn:method][ln:40] - Skipping optional rerun call to 'init' because rerun usage is disabled.
+[2026-08-02 13:26:10,109][DEBUG][m:optional_rerun_wrapper][fn:method][ln:40] - Skipping optional rerun call to 'spawn' because rerun usage is disabled.
+[2026-08-02 13:26:10,109][INFO][m:optional_wandb_wrapper][fn:set_use_wandb][ln:111] - wandb functionality is disabled in the config. Not using wandb for logging.
+[2026-08-02 13:26:10,111][DEBUG][m:optional_wandb_wrapper][fn:method][ln:139] - Skipping optional wandb call to 'init' because wandb usage is disabled.
+Setting image height and width to 680 x 1200
+Done! Execution time of get_dataset function: 0.06 seconds
+Running detections...
+Running detections...
+Running detections...
+Running detections...
+Running detections...
+Running detections...
+Running detections...
+Running detections...
+Running detections...
+Running detections...
+Done! Execution time of YOLO function: 0.11 seconds
+[2026-08-02 13:26:12,329][INFO][m:factory][fn:create_model][ln:326] - Parsing model identifier. Schema: None, Identifier: ViT-H-14
+[2026-08-02 13:26:12,329][INFO][m:factory][fn:create_model][ln:403] - Loaded built-in ViT-H-14 model config.
+[2026-08-02 13:26:12,347][DEBUG][m:_trace][fn:trace][ln:47] - connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=3 socket_options=None
+[2026-08-02 13:26:12,347][DEBUG][m:_trace][fn:trace][ln:47] - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7aa8c9b1f430>
+[2026-08-02 13:26:12,347][DEBUG][m:_trace][fn:trace][ln:47] - send_request_headers.started request=<Request [b'CONNECT']>
+[2026-08-02 13:26:12,348][DEBUG][m:_trace][fn:trace][ln:47] - send_request_headers.complete
+[2026-08-02 13:26:12,348][DEBUG][m:_trace][fn:trace][ln:47] - send_request_body.started request=<Request [b'CONNECT']>
+[2026-08-02 13:26:12,348][DEBUG][m:_trace][fn:trace][ln:47] - send_request_body.complete
+[2026-08-02 13:26:12,348][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_headers.started request=<Request [b'CONNECT']>
+[2026-08-02 13:26:12,348][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'Connection established', [])
+[2026-08-02 13:26:12,348][DEBUG][m:_trace][fn:trace][ln:47] - start_tls.started ssl_context=<ssl.SSLContext object at 0x7aa8c4243dc0> server_hostname='huggingface.co' timeout=3
+[2026-08-02 13:26:12,676][DEBUG][m:_trace][fn:trace][ln:47] - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7aa8c9cca6e0>
+[2026-08-02 13:26:12,676][DEBUG][m:_trace][fn:trace][ln:47] - send_request_headers.started request=<Request [b'GET']>
+[2026-08-02 13:26:12,676][DEBUG][m:_trace][fn:trace][ln:47] - send_request_headers.complete
+[2026-08-02 13:26:12,676][DEBUG][m:_trace][fn:trace][ln:47] - send_request_body.started request=<Request [b'GET']>
+[2026-08-02 13:26:12,676][DEBUG][m:_trace][fn:trace][ln:47] - send_request_body.complete
+[2026-08-02 13:26:12,676][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_headers.started request=<Request [b'GET']>
+[2026-08-02 13:26:12,988][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'Date', b'Sun, 02 Aug 2026 05:28:43 GMT'), (b'content-encoding', b'gzip'), (b'ETag', b'W/"1523-mQdmV5Bv85jNaKvO4A7GDNtqjeQ"'), (b'X-Powered-By', b'huggingface-moon'), (b'X-Request-Id', b'Root=1-6a6ed58b-240777ba37385a473d31a431;3b87e024-267d-4c5b-a362-540433de00fa'), (b'RateLimit', b'"api";r=495;t=169'), (b'RateLimit-Policy', b'"fixed window";"api";q=500;w=300'), (b'cross-origin-opener-policy', b'same-origin'), (b'Referrer-Policy', b'strict-origin-when-cross-origin'), (b'Access-Control-Max-Age', b'86400'), (b'Access-Control-Allow-Origin', b'https://huggingface.co'), (b'Vary', b'Origin'), (b'vary', b'Accept-Encoding'), (b'Access-Control-Expose-Headers', b'X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash'), (b'X-Cache', b'Miss from cloudfront'), (b'Via', b'1.1 c8ee1483012f938e4c0cb1b35eb31ae4.cloudfront.net (CloudFront)'), (b'X-Amz-Cf-Pop', b'SIN2-P7'), (b'Alt-Svc', b'h3=":443"; ma=86400'), (b'X-Amz-Cf-Id', b'usMlFrFflxIDarJvqF-L_C8eXfU-GLq6sKZqlb9JfwmLmernSRcAKg==')])
+[2026-08-02 13:26:12,990][INFO][m:_client][fn:_send_single_request][ln:1025] - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+[2026-08-02 13:26:12,991][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_body.started request=<Request [b'GET']>
+[2026-08-02 13:26:12,991][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_body.complete
+[2026-08-02 13:26:12,991][DEBUG][m:_trace][fn:trace][ln:47] - response_closed.started
+[2026-08-02 13:26:12,991][DEBUG][m:_trace][fn:trace][ln:47] - response_closed.complete
+[2026-08-02 13:26:12,992][DEBUG][m:_trace][fn:trace][ln:47] - send_request_headers.started request=<Request [b'HEAD']>
+[2026-08-02 13:26:12,993][DEBUG][m:_trace][fn:trace][ln:47] - send_request_headers.complete
+[2026-08-02 13:26:12,993][DEBUG][m:_trace][fn:trace][ln:47] - send_request_body.started request=<Request [b'HEAD']>
+[2026-08-02 13:26:12,993][DEBUG][m:_trace][fn:trace][ln:47] - send_request_body.complete
+[2026-08-02 13:26:12,993][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_headers.started request=<Request [b'HEAD']>
+[REDACTED_SIGNED_DOWNLOAD_URL]
+[2026-08-02 13:26:13,318][INFO][m:_client][fn:_send_single_request][ln:1025] - HTTP Request: HEAD https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/resolve/main/open_clip_model.safetensors "HTTP/1.1 302 Found"
+[2026-08-02 13:26:13,319][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_body.started request=<Request [b'HEAD']>
+[2026-08-02 13:26:13,320][DEBUG][m:_trace][fn:trace][ln:47] - receive_response_body.complete
+[2026-08-02 13:26:13,320][DEBUG][m:_trace][fn:trace][ln:47] - response_closed.started
+[2026-08-02 13:26:13,320][DEBUG][m:_trace][fn:trace][ln:47] - response_closed.complete
+[2026-08-02 13:26:13,322][DEBUG][m:_api][fn:_poll_until_acquired][ln:536] - Attempting to acquire lock 134865358720592 on /home/chenkejun/beauty/conceptgraphs/models/huggingface/hub/.locks/models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K/0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5.lock
+[2026-08-02 13:26:13,323][DEBUG][m:_api][fn:_poll_until_acquired][ln:539] - Lock 134865358720592 acquired on /home/chenkejun/beauty/conceptgraphs/models/huggingface/hub/.locks/models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K/0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5.lock
+[2026-08-02 13:26:55,985][DEBUG][m:_api][fn:release][ln:568] - Attempting to release lock 134865358720592 on /home/chenkejun/beauty/conceptgraphs/models/huggingface/hub/.locks/models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K/0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5.lock
+[2026-08-02 13:26:55,986][DEBUG][m:_api][fn:release][ln:572] - Lock 134865358720592 released on /home/chenkejun/beauty/conceptgraphs/models/huggingface/hub/.locks/models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K/0084e75319a50ad85ef45377bad5bc38f2f58824459eb690048d51c9f8863be5.lock
+[2026-08-02 13:26:55,986][INFO][m:factory][fn:create_model][ln:500] - Instantiating model architecture: CLIP
+[2026-08-02 13:27:01,703][INFO][m:factory][fn:create_model][ln:507] - Loading full pretrained weights from: /home/chenkejun/beauty/conceptgraphs/models/huggingface/hub/models--laion--CLIP-ViT-H-14-laion2B-s32B-b79K/snapshots/1c2b8495b28150b8a4922ee1c8edee224c284c0c/open_clip_model.safetensors
+[2026-08-02 13:27:01,970][INFO][m:factory][fn:create_model][ln:621] - Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+[2026-08-02 13:27:01,970][INFO][m:factory][fn:create_model][ln:624] - Model ViT-H-14 creation process complete.
+Error executing job with overrides: ['end=100', 'stride=20', 'make_edges=false', 'use_rerun=false', 'save_rerun=true', 'force_detection=true', 'detections_exp_suffix=smoke_detections_stride20', 'exp_suffix=smoke_mapping_stride20']
+Traceback (most recent call last):
+  File "/home/chenkejun/beauty/conceptgraphs/code/concept-graphs-ali/conceptgraph/slam/rerun_realtime_mapping.py", line 638, in <module>
+    main()
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/main.py", line 94, in decorated_main
+    _run_hydra(
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/_internal/utils.py", line 394, in _run_hydra
+    _run_app(
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/_internal/utils.py", line 457, in _run_app
+    run_and_report(
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/_internal/utils.py", line 223, in run_and_report
+    raise ex
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/_internal/utils.py", line 220, in run_and_report
+    return func()
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/_internal/utils.py", line 458, in <lambda>
+    lambda: hydra.run(
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 132, in run
+    _ = ret.return_value
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/core/utils.py", line 260, in return_value
+    raise self._return_value
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/hydra/core/utils.py", line 186, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/home/chenkejun/beauty/conceptgraphs/code/concept-graphs-ali/conceptgraph/slam/rerun_realtime_mapping.py", line 182, in main
+    clip_model = clip_model.to(cfg.device)
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1145, in to
+    return self._apply(convert)
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/torch/nn/modules/module.py", line 797, in _apply
+    module._apply(fn)
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/torch/nn/modules/module.py", line 820, in _apply
+    param_applied = fn(param)
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1143, in convert
+    return t.to(device, dtype if t.is_floating_point() or t.is_complex() else None, non_blocking)
+  File "/home/chenkejun/beauty/conceptgraphs/envs/cg-ali/lib/python3.10/site-packages/torch/cuda/__init__.py", line 247, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: CUDA driver initialization failed, you might not have a CUDA gpu.

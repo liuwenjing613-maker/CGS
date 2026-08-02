@@ -1,0 +1,18 @@
+name: /home/chenkejun/beauty/conceptgraphs/envs/cg-ali
+channels:
+  - defaults
+dependencies:
+  - aria2
+  - cmake
+  - ffmpeg
+  - ninja
+  - python=3.10
+  - pytorch-cuda=11.8
+  - pytorch==2.0.1
+  - torchaudio==2.0.2
+  - torchvision==0.15.2
+  - blas==1.0=mkl
+  - faiss-cpu=1.7.4
+  - mkl=2021
+  - pytorch3d/pytorch3d/0.7.4/download/linux-64::pytorch3d==0.7.4=py310_cu118_pyt201
+prefix: /home/chenkejun/beauty/conceptgraphs/envs/cg-ali

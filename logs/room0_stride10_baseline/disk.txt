@@ -1,0 +1,23 @@
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p2  1.8T  1.5T  183G  90% /
+tmpfs           252G     0  252G   0% /dev
+tmpfs            51G  6.1M   51G   1% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs            51G   64K   51G   1% /run/user/1014
+tmpfs            51G  120K   51G   1% /run/user/1000
+tmpfs            51G   68K   51G   1% /run/user/1004
+tmpfs            51G  2.1M   51G   1% /run/user/1002
+tmpfs            51G   64K   51G   1% /run/user/1010
+tmpfs            51G   64K   51G   1% /run/user/1016
+tmpfs            51G   64K   51G   1% /run/user/1017
+tmpfs            51G  1.2M   51G   1% /run/user/1012
+tmpfs            51G   64K   51G   1% /run/user/1007
+efivarfs        512K  120K  388K  24% /sys/firmware/efi/efivars
+/dev/nvme0n1p1  511M  6.1M  505M   2% /boot/efi
+/dev/sda         29T  4.9T   23T  18% /data
+tmpfs           252G     0  252G   0% /tmp/.git
+tmpfs           252G     0  252G   0% /tmp/.agents
+tmpfs           252G     0  252G   0% /tmp/.codex
+tmpfs           252G     0  252G   0% /home/chenkejun/beauty/.git
+tmpfs           252G     0  252G   0% /home/chenkejun/beauty/.agents
+tmpfs           252G     0  252G   0% /home/chenkejun/beauty/.codex
