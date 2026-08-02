@@ -5,8 +5,22 @@ envs/
 .config/
 models/
 
-# Datasets and generated mapping artifacts
-data/
+# Datasets and generated mapping artifacts. Keep only the small final JSON
+# files at their original paths; RGB/depth data, detections and point clouds
+# remain ignored.
+data/**
+!data/Replica/
+data/Replica/**
+!data/Replica/room0/
+data/Replica/room0/**
+!data/Replica/room0/exps/
+data/Replica/room0/exps/**
+!data/Replica/room0/exps/smoke_mapping_stride20_gpu0_cached/
+data/Replica/room0/exps/smoke_mapping_stride20_gpu0_cached/**
+!data/Replica/room0/exps/smoke_mapping_stride20_gpu0_cached/*.json
+!data/Replica/room0/exps/room0_mapping_stride10/
+data/Replica/room0/exps/room0_mapping_stride10/**
+!data/Replica/room0/exps/room0_mapping_stride10/*.json
 **/outputs/
 *.pkl
 *.pkl.gz
@@ -39,4 +53,3 @@ secrets*
 latest_pcd_save
 .DS_Store
 *.swp
-

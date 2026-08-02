@@ -21,7 +21,7 @@
 - `code/concept-graphs-ali/`：上游代码快照及本次兼容修复。
 - `docs/`：服务器复现与本地可视化手册。
 - `logs/`：环境、硬件、Smoke Test 和完整 room0 日志。
-- `results/`：不含大点云的 JSON/config 结果。
+- `data/Replica/room0/exps/.../*.json`：在原始目录中保留的小型 JSON/config 结果；其余数据文件被忽略。
 - `outputs/smoke_vis/`：少量 Smoke Test 检测图。
 - `scripts/server_env.sh`：当前服务器环境变量加载脚本。
 
