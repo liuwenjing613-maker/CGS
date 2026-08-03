@@ -314,9 +314,9 @@ def old_filter_detections(
 class CustomBoxAnnotator(sv.BoxAnnotator):
     def __init__(
         self,
-        color: Union[Color, ColorPalette] = ColorPalette.DEFAULT,
+        color: Union[Color, ColorPalette] = ColorPalette.default(),
         thickness: int = 2,
-        text_color: Color = Color.BLACK,
+        text_color: Color = Color.black(),
         text_scale: float = 0.5,
         text_thickness: int = 1,
         text_padding: int = 10,

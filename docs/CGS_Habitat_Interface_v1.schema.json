@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CGS Habitat Sequence Metadata v1",
+  "type": "object",
+  "required": [
+    "format_version",
+    "sequence_id",
+    "scene_id",
+    "num_frames",
+    "rgb",
+    "depth",
+    "camera",
+    "poses",
+    "conceptgraphs",
+    "T_habitat_world_from_cg_map"
+  ],
+  "properties": {
+    "format_version": {
+      "const": "cgs-habitat-sequence-v1"
+    },
+    "sequence_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_.-]+$"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "num_frames": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "rgb": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "pattern"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pattern": {
+          "type": "string"
+        }
+      }
+    },
+    "depth": {
+      "type": "object",
+      "required": [
+        "pattern",
+        "storage_dtype",
+        "storage_unit",
+        "png_depth_scale"
+      ],
+      "properties": {
+        "pattern": {
+          "type": "string"
+        },
+        "storage_dtype": {
+          "const": "uint16"
+        },
+        "storage_unit": {
+          "const": "millimeter"
+        },
+        "png_depth_scale": {
+          "const": 1000.0
+        }
+      }
+    },
+    "camera": {
+      "type": "object",
+      "required": [
+        "hfov_deg",
+        "fx",
+        "fy",
+        "cx",
+        "cy",
+        "sensor_height_m"
+      ]
+    },
+    "poses": {
+      "type": "object",
+      "required": [
+        "file",
+        "type",
+        "camera_frame",
+        "world_frame"
+      ],
+      "properties": {
+        "file": {
+          "const": "traj.txt"
+        },
+        "type": {
+          "const": "camera_to_world"
+        },
+        "camera_frame": {
+          "const": "opencv"
+        },
+        "world_frame": {
+          "const": "habitat"
+        }
+      }
+    },
+    "conceptgraphs": {
+      "type": "object",
+      "required": [
+        "relative_pose",
+        "map_frame"
+      ],
+      "properties": {
+        "relative_pose": {
+          "const": true
+        },
+        "map_frame": {
+          "const": "first_opencv_camera"
+        }
+      }
+    },
+    "T_habitat_world_from_cg_map": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 4,
+        "items": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

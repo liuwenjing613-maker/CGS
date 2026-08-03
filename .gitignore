@@ -53,3 +53,15 @@ secrets*
 latest_pcd_save
 .DS_Store
 *.swp
+
+# Ubuntu Habitat runtime data and acceptance artifacts
+results/
+logs/objectnav/
+logs/episodes/
+logs/habitat/audit/
+logs/habitat/audit_current/
+
+# Local scene archives and generated media must stay outside Git
+*.glb
+*.navmesh
+*.mp4
