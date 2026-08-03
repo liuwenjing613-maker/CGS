@@ -1,0 +1,7 @@
+{
+  "display": ":0",
+  "habitat_sim": "0.3.3",
+  "opencv": "4.11.0",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+  "python": "3.9.23"
+}

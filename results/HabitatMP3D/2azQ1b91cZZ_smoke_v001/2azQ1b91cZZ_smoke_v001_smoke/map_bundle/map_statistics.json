@@ -1,0 +1,35 @@
+{
+  "num_objects": 26,
+  "num_nan_centers": 0,
+  "bbox_center_min": [
+    -2.1991293938664214,
+    0.32025285843479834,
+    0.2315857830313737
+  ],
+  "bbox_center_max": [
+    3.8590341652730324,
+    2.0881734260757217,
+    10.085998539570772
+  ],
+  "max_radius_m": 10.56778327249709,
+  "class_histogram": {
+    "bench": 1,
+    "cabinet": 1,
+    "closet door": 1,
+    "coffee kettle": 1,
+    "cushion": 1,
+    "desk": 1,
+    "folded chair": 1,
+    "microwave": 1,
+    "mirror": 2,
+    "oven": 1,
+    "paper bag": 1,
+    "piano": 1,
+    "picture": 3,
+    "plate": 1,
+    "power outlet": 1,
+    "radiator": 2,
+    "sofa chair": 1,
+    "window": 5
+  }
+}

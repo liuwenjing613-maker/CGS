@@ -26,6 +26,10 @@ data/Replica/room0/exps/room0_mapping_stride10/**
 *.pkl.gz
 *.rrd
 
+# Deprecated Habitat bundles created before the canonical
+# results/HabitatMP3D/<sequence>/<run>/map_bundle layout.
+results/HabitatMP3D/*_smoke/map_bundle/
+
 # Model weights and binary checkpoints
 *.pt
 *.pth

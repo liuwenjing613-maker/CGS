@@ -1,0 +1,19 @@
+{
+  "episode_id": "sofa_acceptance_run2",
+  "evaluation_protocol": "predicted_object_visibility_v1",
+  "expected_class": "sofa",
+  "fixed_start_position_habitat": [
+    2.750798463821411,
+    0.12710899114608765,
+    9.070718765258789
+  ],
+  "format_version": "cgs-objectnav-episode-v1",
+  "navigator": "habitat_sim_greedy_geodesic_follower",
+  "query": "sofa",
+  "scene": "/home/abc/conceptgraphs/data/scenes/mp3d/2azQ1b91cZZ/2azQ1b91cZZ.glb",
+  "scene_id": "2azQ1b91cZZ",
+  "seed": 2027,
+  "selected_rank": 1,
+  "semantic_gt_available": false,
+  "sequence_id": "2azQ1b91cZZ_smoke_v001"
+}

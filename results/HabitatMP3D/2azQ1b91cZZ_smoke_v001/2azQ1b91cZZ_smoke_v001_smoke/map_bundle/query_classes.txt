@@ -1,0 +1,18 @@
+bench
+cabinet
+closet door
+coffee kettle
+cushion
+desk
+folded chair
+microwave
+mirror
+oven
+paper bag
+piano
+picture
+plate
+power outlet
+radiator
+sofa chair
+window

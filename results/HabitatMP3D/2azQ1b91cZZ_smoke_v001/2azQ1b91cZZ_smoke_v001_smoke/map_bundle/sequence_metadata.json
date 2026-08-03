@@ -1,0 +1,66 @@
+{
+  "format_version": "cgs-habitat-sequence-v1",
+  "sequence_id": "2azQ1b91cZZ_smoke_v001",
+  "scene_id": "2azQ1b91cZZ",
+  "num_frames": 20,
+  "rgb": {
+    "width": 640,
+    "height": 480,
+    "pattern": "results/frame%06d.jpg"
+  },
+  "depth": {
+    "pattern": "results/depth%06d.png",
+    "storage_dtype": "uint16",
+    "storage_unit": "millimeter",
+    "png_depth_scale": 1000.0
+  },
+  "camera": {
+    "hfov_deg": 90.0,
+    "fx": 320.00000000000006,
+    "fy": 320.00000000000006,
+    "cx": 319.5,
+    "cy": 239.5,
+    "sensor_height_m": 1.25
+  },
+  "poses": {
+    "file": "traj.txt",
+    "type": "camera_to_world",
+    "camera_frame": "opencv",
+    "world_frame": "habitat"
+  },
+  "conceptgraphs": {
+    "relative_pose": true,
+    "map_frame": "first_opencv_camera"
+  },
+  "T_habitat_world_from_cg_map": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      2.750798463821411
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      1.3771090507507324
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      9.070718765258789
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "semantic_available": false,
+  "export": {
+    "mode": "panorama-smoke",
+    "seed": 2027
+  }
+}

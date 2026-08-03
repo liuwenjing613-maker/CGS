@@ -1,0 +1,39 @@
+{
+  "format_version": "cgs-map-bundle-v1",
+  "sequence_id": "2azQ1b91cZZ_smoke_v001",
+  "run_id": "2azQ1b91cZZ_smoke_v001_smoke",
+  "map_frame": "first_opencv_camera",
+  "habitat_world_frame": "habitat",
+  "T_habitat_world_from_cg_map": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      2.750798463821411
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      1.3771090507507324
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0,
+      9.070718765258789
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "files": {
+    "object_map": "object_map.pkl.gz",
+    "objects": "objects.json",
+    "edges": "edges.json",
+    "sequence_metadata": "sequence_metadata.json"
+  }
+}
