@@ -1,0 +1,15 @@
+{
+  "figures": [
+    "four_scene_rank_metrics.png",
+    "holdout_object_diagnostic.png",
+    "holdout_operational_metrics.png"
+  ],
+  "decision": "MODIFY",
+  "objects": 53,
+  "counts": {
+    "TP": 25,
+    "FP": 4,
+    "FN": 17,
+    "TN": 7
+  }
+}
