@@ -6,22 +6,23 @@
 
 ## 数据与协议
 
-- 场景：room1、office1。
+- 场景：room0（DEV）、room1、office1（HOLDOUT）。
 - 每场景 400 个处理帧，对应 raw frame `0,5,...,1995`。
 - 分辨率：1200×680；三联预览图为 1800×420。
 - GT 来自冻结在线建图完成后的 ReplicaSSG 全帧 instance 渲染，仅用于事后参考，未进入 mapper 或 trigger。
-- 精确归属检查：room1 4,473 条、office1 3,272 条 observation 全部唯一映射到最终 instance；缺失和重复 owner 均为 0。
+- 精确归属检查：room0 7,507 条、room1 4,473 条、office1 3,272 条 observation 全部唯一映射到最终 instance；缺失和重复 owner 均为 0。
 
 ## GT 对齐质量
 
 | 场景 | 逐帧 5 cm 内深度一致率最低值 | 最大逐帧中位绝对误差 |
 |---|---:|---:|
+| room0 | 99.4371% | 3.37 mm |
 | room1 | 99.6305% | 2.54 mm |
 | office1 | 99.7027% | 1.61 mm |
 
 ## 产物
 
-- `gt_reference_viewer/index.html`：一次只加载当前图片的轻量查看器。
+- `gt_reference_viewer/index.html`：一次只加载当前图片的轻量查看器，可直接输入原始帧号查找。
 - 每场景 `frames/`：400 张 RGB/GT/owner 三联图。
 - 每场景 `gt_instance_id_png16/`：400 张精确 16-bit GT instance ID PNG。
 - `instance_to_gt_summary.csv`：每个 Ixx 的纯 observation→GT 分布、mixed-mask 比例和疑似 merge 标记。
@@ -31,6 +32,7 @@
 
 | 场景 | 疑似 false merge instance | 疑似 false split pair |
 |---|---:|---:|
+| room0 | 8 | 24 |
 | room1 | 4 | 10 |
 | office1 | 0 | 2 |
 
@@ -45,6 +47,6 @@
 
 ## 校验
 
-- 800/800 三联图和 800/800 GT PNG 生成完成。
-- ZIP 完整性检查通过；SHA-256：`4be708e83ffdac8e72c96505ab098f51ae25341d3885c393bea96a6bdfb31e78`。
-- 本地浏览器验证场景切换、滑条、方向键、帧号和图片加载均正常。
+- 1,200/1,200 三联图和 1,200/1,200 GT PNG 生成完成。
+- ZIP 完整性检查通过；SHA-256：`bb3232a84fc29efd8093176a1e1195d1279e25e98ee25189d1310ebca0a54eb8`。
+- 本地浏览器验证 room0 默认加载、场景切换、滑条、方向键、原始帧号查找和图片加载均正常；输入非 stride-5 帧号会明确提示而不静默取整。
